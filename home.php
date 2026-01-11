@@ -15,7 +15,7 @@ if(!isset($_SESSION['username'])){
 <div class="box">
 <h2>Selamat Datang!</h2>
 <p><b>Username:</b> <?= $_SESSION['username']; ?></p>
-<p><b>Gender:</b> <?= $_SESSION['gender']; ?></p>
+<p><b>Gender:</b> <?= isset($_SESSION['gender']) ? $_SESSION['gender'] : '-'; ?></p>
 <a href="logout.php" class="btn btn-red">Logout</a>
 </div>
 </body>
